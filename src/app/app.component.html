@@ -1,0 +1,70 @@
+<h1>Pipes</h1>
+<hr><hr>
+
+<h3>Date display in different formats</h3>
+<a href="https://angular.io/api/common/DatePipe" target="_blank">See More Date Formats</a><br><br>
+<span>01 - {{ "1-12-2023" | date}}</span><br>
+<span>02 - {{ "1-12-2023" | date:'short'}}</span><br>
+<span>03 - {{ "1-12-2023" | date:'medium'}}</span><br>
+<span>04 - {{ "1-12-2023" | date:'long'}}</span><br>
+<span>05 - {{ "1-12-2023" | date:'fullDate'}}</span><br>
+<hr>
+
+
+<h3>Data display in Uppercase</h3>
+<span>{{"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi obcaecati necessitatibus ducimus et impedit saepe, aut reiciendis quibusdam aspernatur voluptatum, natus non qui sequi rerum, nam fuga modi odio magni." | uppercase}}</span>
+<hr>
+
+
+<h3>Data display in Titlecase</h3>
+<span>{{"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi obcaecati necessitatibus ducimus et impedit saepe, aut reiciendis quibusdam aspernatur voluptatum, natus non qui sequi rerum, nam fuga modi odio magni." | titlecase}}</span>
+<hr>
+
+
+<h3>Data display in lowercase</h3>
+<span>{{"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi obcaecati necessitatibus ducimus et impedit saepe, aut reiciendis quibusdam aspernatur voluptatum, natus non qui sequi rerum, nam fuga modi odio magni." | lowercase}}</span>
+<hr>
+
+
+<h3>Currency</h3>
+<span>{{ 20 | currency:'USD'}}</span><br>
+<span>{{ 20 | currency:'INR'}}</span><br>
+<span>{{ 20 | currency:'EUR'}}</span><br>
+<span>{{ 20 | currency:'JPY'}}</span><br>
+<hr>
+
+
+<h3>Decimal Numbers</h3>
+<span>{{ 20456.123456789 | number:'1.0-4'}}</span><br>
+<span>{{ 20.123456789 | number:'4.0-9'}}</span><br>
+<span>{{ 20.123456789 | number:'1.15'}}</span><br>
+<span>{{ 20.123456789 | number:'10.2'}}</span><br>
+<hr>
+
+
+<h3>Percentage</h3>
+<span>{{ 0.71 | percent}}</span><br>
+<span>{{ 0.7120 | percent:'2.2'}}</span><br>
+<span>{{ 0.7112345| percent:'2.3'}}</span><br>
+<span>{{ 0.7112345| percent:'2.8'}}</span><br>
+<hr>
+
+
+<h3>Json</h3>
+<pre>{{studentData | json}}</pre>
+<hr>
+
+<h3>Slice</h3>
+<span>{{ "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, mollitia!" | slice:0:1  }}</span><br>
+<span>{{ "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, mollitia!" | slice:0:10  }}</span><br>
+<span>{{ "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, mollitia!" | slice:7:-2  }}</span><br>
+<hr>
+
+
+<h3>Custom Pipe : USD to INR</h3>
+<span>{{ 20 | usdToinr:80 }}</span>
+
+
+
+
+
